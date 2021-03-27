@@ -1,7 +1,7 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-  background-color: #eee;
+  // background-color: #eee;
 
   // put these styles on all the rows except the last child
   &:not(:last-child) {
@@ -12,7 +12,7 @@
 
   // Attribute: all classes that ^start with "col-"
   [class^="col-"] {
-    background-color: palegoldenrod;
+    // background-color: palegoldenrod;
     float: left;
 
     &:not(:last-child) {
