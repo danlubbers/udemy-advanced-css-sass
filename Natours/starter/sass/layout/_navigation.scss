@@ -14,8 +14,18 @@
     border-radius: 50%;
     z-index: 2000;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
+  // Background hides behind the button element
   &__background {
     height: 6rem;
     width: 6rem;
@@ -31,6 +41,15 @@
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     will-change: transform; // Fixed close animation glitch
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {
