@@ -26,7 +26,7 @@
     float: left;
     position: relative;
     overflow: hidden;
-    shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); // shapes text around image
     clip-path: circle(50% at 50% 50%);
     transform: skewX(12deg);
 

@@ -10,6 +10,7 @@
     transition: all 0.8s ease;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -173,7 +174,10 @@
   }
 
   // MEDIA QUERY REWRITE
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+
+  // use (hover:none) for devices like tablets since they cannot hover over elements but still need functionality
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
